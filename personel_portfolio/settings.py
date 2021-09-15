@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9pr$c3fdu2jdif+y5iv(8ck=w7t$ri_!ogtxokma9g68k_(c=h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yeshamittal.pythonanywhere.com']
 
 
 # Application definition
@@ -119,7 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/templates/'
+STATIC_URL = '/static/'
+STATIC_ROOT = Path(__file__).resolve().parent.parent/'static'
 
 MEDIA_URL = '/media/'
 
